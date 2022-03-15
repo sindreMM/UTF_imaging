@@ -65,12 +65,5 @@ class ImageUi(tk.Tk):
         self.set_image()
 
 
-def main():
-    root = ImageUi(400, 600)
-    root.configure(background="gray")
-
-    root.mainloop()
-
-
 if __name__ == "__main__":
-    main()
+    pass

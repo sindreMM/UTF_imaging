@@ -1,15 +1,21 @@
-# UTF imaging
-This program is an user interface that allows the user
-to select a file from a directory to turn it into a UTF-image.
-When an image is selected, the user can adjust the degree of pixelation and overview the result before adding
-it to the clipboard.
+# UTF art
+This program creates an ui that allows the user to transform images from their computer
+into UTF-8 strings and add the string into their clipboard for easy pasting.
 
 ## Requirements
-* pillow
-* numpy
-* pyperclip
 * easygui
+* numpy
+* OpenCV-python
+* pillow
+* pyperclip
 * tkinter
 
+## How to use
+Import and run the start_program function from main.py:
+````
+from utf_imaging.main import start_program
+
+start_program()
+````
 
 
