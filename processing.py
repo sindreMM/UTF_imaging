@@ -9,6 +9,7 @@ def get_img():
     img_file = easygui.fileopenbox()
     return img_file
 
+
 def to_img(img_file):
     image = cv2.imread(img_file, flags=IMREAD_GRAYSCALE)
     return image
@@ -23,7 +24,7 @@ def show_img(name, img):
 
 def add_to_clipboard(text):
     pyperclip.copy(text)
-    print("art added to clipboard")
+    # print("art added to clipboard")
 
 
 def average_square(image, pos, size):
@@ -68,8 +69,9 @@ def int_to_char(number):
     try :
         2*convert_utf[convert_number]
     except KeyError:
-        print(KeyError)
-        print(number)
+        # print(KeyError)
+        # print(number)
+        pass
     return 2*convert_utf[convert_number]
 
 
