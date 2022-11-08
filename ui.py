@@ -7,6 +7,8 @@ import numpy as np
 class ImageUi(tk.Tk):
     def __init__(self, width, height):
         super().__init__()
+        super().title("UTF image generator")
+        super().resizable(False, False)
         self.url = None
         self.image = None
         self.pixel_image = None
@@ -31,13 +33,13 @@ class ImageUi(tk.Tk):
 
         self.slider.grid(row=1, column=1, sticky=tk.EW)
 
-        self.show_pixel_button = tk.Button(self, text="pixelate", command=lambda: self.setup())
+        self.show_pixel_button = tk.Button(self, text="Pixelate", command=lambda: self.setup())
         self.show_pixel_button.grid(row=1, column=2, sticky=tk.NSEW)
 
         self.clipboard_button = tk.Button(self, text="Add to clipboard", command=lambda: add_to_clipboard(self.utf_string))
         self.clipboard_button.grid(row=1, column=3, sticky=tk.NSEW)
 
-        self.pick_image_button = tk.Button(self, text="choose image", command=lambda: self.choose_image())
+        self.pick_image_button = tk.Button(self, text="Choose image", command=lambda: self.choose_image())
         self.pick_image_button.grid(row=1, column=0, sticky=tk.NSEW)
 
         self.canvas1_img = self.canvas1.create_image(0, 0, anchor=tk.NW, image=self.image)
@@ -61,7 +63,7 @@ class ImageUi(tk.Tk):
     def setup(self):
         temp_img = np.asarray(self.pilImg)
         self.pixel_image = pixelate(temp_img, int(self.slider.get()))
-        self.utf_string = to_utf(self.pixel_image)
+        self.utf_string = to_utf(self.pixel_image, int(self.slider.get()))
         self.set_image()
 
 

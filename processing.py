@@ -75,14 +75,14 @@ def int_to_char(number):
     return 2*convert_utf[convert_number]
 
 
-def to_utf(raw_img):
+def to_utf(raw_img, pixelation):
     """
     Creates a string from a picture with a utf-symbol corresponding with the gray scale level
     of each pixel
     """
     utf_string = ""
-    for row in raw_img:
-        string_row = map(int_to_char, row)
+    for row in raw_img[::pixelation]:
+        string_row = map(int_to_char, row[::pixelation])
         utf_string += "".join(string_row) + "\n"
     return utf_string
 
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     show_img("Window", im)
     pixel_img = pixelate(im, 3)
     show_img("Window", pixel_img)
-    utf = to_utf(pixel_img)
+    utf = to_utf(pixel_img, 3)
     add_to_clipboard(utf)
 
 
