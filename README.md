@@ -24,10 +24,16 @@ This will make the application turn up on your screen (see Figure 1).
 * Hit the "Pixelate" buton to render a pixelated grayscale version of the image
 * Click the "Add to clipboard" button and paste wherever you want!
 
-![UI screenshot](/utf_imaging/images/UTFGeneratorScreenshot.png "Figure 1: UI screenshot")
+![UTFGeneratorScreenshot](https://user-images.githubusercontent.com/39603487/201335308-8993afda-a1db-48a3-8574-721b61d67ddb.png)
 
-Here are some images generated with the application:
-![Generated text example 1](/utf_imaging/images/UTFGeneratorImage.png)
-![Generated text example 2](/utf_imaging/images/UTFGeneratorImageLarge.png)
+## Here are some images generated with the application:
+![MonaLisaUTF](https://user-images.githubusercontent.com/39603487/201336202-3eb75bb2-4e69-40b1-aa60-8036403cfdd2.png)
+### Mona Lisa by Leonardo da Vinci
+![ScreamUTF](https://user-images.githubusercontent.com/39603487/201336206-6af1b300-c934-4ee0-acc6-d1e411f8d7fe.png)
+### Scream by Edvard Munch
+![StarryNightUTF](https://user-images.githubusercontent.com/39603487/201336208-5891a4b8-07be-444a-81bd-3f9b14b1cff9.png)
+### The starry night by Vincent van Gogh
+
+
 
 
